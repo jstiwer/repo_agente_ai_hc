@@ -55,8 +55,8 @@ st.markdown("""
 
 def connect_api(query):
     BASE_API_URL = "https://api.langflow.astra.datastax.com"
-    LANGFLOW_ID = "40e98986-3486-471e-8c5d-6a27d01f3d78"
-    FLOW_ID = "a4bb8b81-8469-4cd6-8898-d31597bed217"
+    LANGFLOW_ID = "0791cbe2-437c-4d5d-9df0-23cbad666ca0"
+    FLOW_ID = "741d247a-5163-49d3-9175-9450dff46b93"
     APPLICATION_TOKEN  = "AstraCS:UByPvhxWgxaObuiRdHYkwNMl:cc45f1eeb9a640236415222c6d65eeef6937fca25f6276653ec8fdd9b324b16d"
     headers = {
         "Authorization": f"Bearer {APPLICATION_TOKEN}",
