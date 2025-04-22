@@ -1,0 +1,4 @@
+langflow
+openai
+langchain
+chromadb
