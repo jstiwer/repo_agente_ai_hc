@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "https://api1-zv36.onrender.com/chat"  # Replace with your API URL
+API_URL = "https://api.langflow.astra.datastax.com/lf/741d247a-5163-49d3-9175-9450dff46b93/api/v1/run/0791cbe2-437c-4d5d-9df0-23cbad666ca0"  # Replace with your API URL
 
 col1, col2 = st.columns([3,1])
 
