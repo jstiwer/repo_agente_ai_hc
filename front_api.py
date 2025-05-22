@@ -87,3 +87,22 @@ if submit_button and query:
         data = response_api.json()
         data = data["outputs"][0]["outputs"][0]["results"]["message"]["text"]
         st.write(data)
+
+if submit_button and query:
+    response_api = connect_api(query)
+    
+if response_api.status_code != 200:
+    st.write("⚠️ No 'response' key found in JSON.", response_api)
+else:
+    data = response_api.json()
+    data = data["outputs"][0]["outputs"][0]["results"]["message"]["text"]
+    st.write(data)
+    
+    # Botones de Like y Dislike
+    col_like, col_dislike = st.columns([1, 1])
+    with col_like:
+        if st.button("👍 Me gusta", key="like"):
+            st.success("¡Gracias por tu feedback positivo!")
+    with col_dislike:
+        if st.button("👎 No me gusta", key="dislike"):
+            st.warning("¡Gracias por tu feedback!")
