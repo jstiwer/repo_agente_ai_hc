@@ -75,9 +75,9 @@ def connect_api(query):
     
 with st.expander("¿Cómo realizar una preguntar?"):
     st.markdown("""
-    Para hacer una pregunta correcta al agente usa la siguiente estructura: 
+    Para hacer una pregunta correcta al agente usa la siguiente estructura:\n
     Para obtener la mejor respuesta sobre políticas y reglas de crédito, estructura tu pregunta indicando claramente la acción que deseas que realice nuestro Agente de Habicredit (ej. "explica", "enumera", "dime"), el tema específico (ej. "requisitos para radicar", "políticas de desembolso", "documentos necesarios") y cualquier condición o detalle adicional (ej. "para crédito hipotecario", "si ya tengo un crédito", "paso a paso"). Sé lo más directo y específico posible para una respuesta precisa.
-    Por último, mo olvides calificar la respuesta obtenida.
+    \n\nPor último, mo olvides calificar la respuesta obtenida.
     """)
     
 # Usa st.form para agrupar el input y botón
