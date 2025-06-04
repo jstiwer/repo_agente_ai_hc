@@ -73,9 +73,9 @@ def connect_api(query):
     return responses
     
     
-with st.expander("Template"):
+with st.expander("¿Cómo realizar una preguntar?"):
     st.markdown("""
-    Aquí puedes colocar instrucciones, ejemplos de preguntas, o cualquier texto informativo que desees mostrar como template para los usuarios.
+    Para hacer una pregunta correcta al agente usa la siguiente estructura: 
     """)
     
 # Usa st.form para agrupar el input y botón
