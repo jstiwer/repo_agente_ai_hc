@@ -72,7 +72,12 @@ def connect_api(query):
     responses = requests.post(f"{BASE_API_URL}/lf/{LANGFLOW_ID}/api/v1/run/{FLOW_ID}", json=payload, headers=headers, timeout=90) 
     return responses
     
-
+    
+with st.expander("Template"):
+    st.markdown("""
+    Aquí puedes colocar instrucciones, ejemplos de preguntas, o cualquier texto informativo que desees mostrar como template para los usuarios.
+    """)
+    
 # Usa st.form para agrupar el input y botón
 with st.form(key='chat_form'):
     query = st.text_input("Realiza las preguntas que hacen tus brokers:")
